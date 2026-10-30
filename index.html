@@ -527,3 +527,19 @@ footer {
 
 </body>
 </html>
+<script>
+const telegramLink = "https://t.me/+Qd-17xjspYFmNGNl";
+let seconds = ;
+
+const countdown = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+  seconds--;
+  if (countdown) countdown.textContent = seconds;
+
+  if (seconds <= 0) {
+    clearInterval(timer);
+    window.location.href = telegramLink;
+  }
+}, 1000);
+</script>
